@@ -1,0 +1,17 @@
+.animated-text {
+    .animation {
+        position: relative;
+        animation-name: drop;
+        animation-duration: 500ms;
+    }
+
+    @keyframes drop {
+        from {
+            top: -15px;
+        }
+
+        to {
+            top: 5px;
+        }
+    }
+}

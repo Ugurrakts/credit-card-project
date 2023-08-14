@@ -1,0 +1,16 @@
+$backgroundColor :#b5dafd;
+$colorBlack: black;
+$colorWhite: white;
+$inputHoverColor: rgb(0, 0, 173);
+
+.displayflexgeneral{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.displayflexrow{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}

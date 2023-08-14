@@ -1,0 +1,115 @@
+@import "../Config.scss";
+
+
+
+.creditcard-area {
+    position: absolute;
+    top: -150px;
+    color: $colorWhite;
+    background-image: url('../../public/images/arkaplan.jpg');
+    background-size: cover;
+    width: 80%;
+    border-radius: 25px;
+    height: 250px;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+   
+    
+    .logo {
+      @extend .displayflexrow;
+      align-items: center;
+
+      img {
+        height: 65px;
+      }
+    }
+
+    .card-information {
+      @extend .displayflexrow;
+      align-items: center;
+      padding: 20px;
+      font-size: 25;
+
+      span {
+        font-size: 15px
+      }
+
+      h4 {
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+    .color{
+        border: 1 px solid;
+        background-color: $colorBlack;
+    }
+    .cvv {
+      width: 100%;
+      background-color: $colorWhite;
+      color: black;
+      border-radius: 5px;
+      height: 40px;
+      h4{
+        margin-top: 10px;
+      }
+    }
+
+    .focused {
+      border: 1px solid;
+    }
+  }
+
+  .flip-card-inner {
+    top: -100px;
+    position: relative;
+    @extend .displayflexgeneral;
+    justify-content: none;
+    align-items: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card-inner:hover {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back,
+  .flip-card-back-active {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-back-active {
+    text-align: end;
+    justify-content: center;
+    align-items: end;
+
+    .focused {
+      border: none;
+    }
+
+    .black-rectangle{
+      background-color: $colorBlack;
+      margin-top: 10px;
+      height: 8vh;
+      width: 100%;
+    }
+  }
+
+  .flip-card-back {
+    text-align: end;
+    justify-content: center;
+    background-image: url('../../public/images/arkaplan.jpg');
+    align-items: end;
+    transform: rotateY(180deg);
+
+    .black-rectangle{
+      background-color: $colorBlack;
+      margin-top: 10px;
+      height: 8vh;
+      width: 100%;
+    }
+  }

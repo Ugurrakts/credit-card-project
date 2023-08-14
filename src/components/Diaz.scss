@@ -1,0 +1,23 @@
+.span-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 30px;
+
+    .animation {
+        position: relative;
+        animation-name: drop;
+        animation-duration: 500ms;
+    }
+
+    @keyframes drop {
+        from {
+            top: -15px;
+        }
+
+        to {
+            top: 5px;
+        }
+    }
+}
